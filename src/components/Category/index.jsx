@@ -10,7 +10,7 @@ export default function Category() {
     const { categoriesMap } = useContext(CategoriesContext);
 
     const [products, setProducts] = useState(categoriesMap[category]);
-    console.log("products", products);
+
 
     useEffect(() => {
         setProducts(categoriesMap[category])
@@ -30,9 +30,3 @@ export default function Category() {
 }
 
 
-function keysAndValues(obj) {
-    let c = [];
-    c.push(Object.keys(obj))
-
-}
-console.log(keysAndValues({ a: 1, b: 2, c: 3 }))
